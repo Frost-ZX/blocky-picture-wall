@@ -1,0 +1,29 @@
+{
+    "Site": {
+        "Title": "标题",
+        "Subtitle": "副标题",
+        "Owner": "Frost-ZX"
+    },
+    "Personal": {
+        "About": [
+            "Blocky，由 Frost-ZX 基于 Multiverse（作者：HTML5 UP）制作的一个图片展示墙 PHP 程序。",
+            "增加了 Lazy Load（延迟加载图片）、标签、翻页、全屏等功能。",
+            "可在 assets/json/settings.json 和 assets/json/images.json 修改配置。"
+        ],
+        "Contact": {
+            "Link_Type": "text",
+            "Links": [
+                {
+                    "Name": "GitHub",
+                    "Link": "https://github.com/",
+                    "Icon_Class": "brands fa-github"
+                },
+                {
+                    "Name": "Twitter",
+                    "Link": "https://twitter.com/",
+                    "Icon_Class": "brands fa-twitter"
+                }
+            ]
+        }
+    }
+}

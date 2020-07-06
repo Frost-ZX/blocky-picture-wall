@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* 滚动条 */
+
+/* 整体 */
+::-webkit-scrollbar {
+    width: 8px; /* 纵向 */
+    height: 8px; /* 横向 */
+}
+/* 方块 */
+::-webkit-scrollbar-thumb {
+    background-color: #CCC;
+}
+/* 轨道 */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 20%);
+    background: #1F2224;
+}
+
+/* ---- */
+/* 覆盖 */
+/* ---- */
+
+/* Wrapper - 取消模糊 */
+body.modal-active #wrapper {
+    -moz-filter: none;
+    -webkit-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+/* Wrapper - Main - 模糊 */
+body.modal-active #wrapper #main {
+    -moz-filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+}
+/* Wrapper - Header - 隐藏 */
+body #wrapper #header {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+body.modal-active #wrapper #header {
+    opacity: 0;
+}
+
+/* Wrapper - Header */
+#header nav > ul > li a.icon:before {
+    color: #CCC;
+}
+
+/* Wrapper - Main - 翻页 */
+#main > .pager {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+#main > .pager a,
+#main > .pager span {
+    display: inline-block;
+    background-color: #1f2224;
+    font-size: 16px;
+    color: #EEE;
+}
+#main > .pager a {
+    margin: 0 2px;
+    padding: 10px 15px;
+    border-bottom: none;
+    text-decoration: none;
+}
+#main > .pager span {
+    padding: 10px 20px;
+    margin: 0 2px;
+}
+
+/* Wrapper - Main - 下方空白 */
+#main > .spacing {
+    display: block;
+    height: 0;
+    width: 100%;
+}
+
+/* Wrapper - Footer - 联系我 - 链接 */
+#footer section .icons li .text {
+    border-bottom: solid 1px #555;
+    color: #999;
+}
+#footer section .icons li .text:hover {
+    border-bottom: none;
+}
+
+/* Wrapper - Footer - 联系我 - 内容输入框 */
+#footer section form > .fields > .field > textarea {
+    resize: none;
+}
+
+
+/* 图片预览 - 标签 */
+.poptrox-overlay > .poptrox-popup > .caption > p > span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    font-size: 12px;
+    color: #FFF;
+}
+

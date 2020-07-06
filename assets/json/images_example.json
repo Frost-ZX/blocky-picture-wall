@@ -1,0 +1,40 @@
+{
+    /* 配置 */
+    "Config": {
+        "Image_Dir": "assets/images/", // 图片所在文件夹的相对路径
+        "Page_Max_Images": 30,         // 单页最大显示的图片数量
+        "Thumb_Suffix": "?thumb=1"     // 缩略图后缀（全局）：设定缩略图的文件名后缀、URL参数等
+    },
+    /* 图片 */
+    "Images": [
+        {
+            "Title": "标题",                  // 标题
+            "Date": "2020-01-01",             // 日期
+            "Image_Type": "local",            // 图片类型（可选，默认 local）：local（本地图片），online（在线图片）
+            "Image_Src": "Default/02.jpg",    // 图片来源（根据“图片类型”填写相对路径或图片链接）
+            "Thumb_Suffix": "?quality=80",    // 缩略图后缀（可选，覆盖全局中的设定）
+            /* 标签（可选，数量不宜过多） */
+            "Tags": [
+                "标签1",
+                "标签2",
+                "标签3"
+            ],
+            /* 描述（可选） */
+            "Content": [
+                "描述 描述 描述 描述 描述 描述 描述 描述 描述 描述",
+                "Description Description Description Description Description"
+            ]
+        },
+        {
+            "Title": "标题",
+            "Date": "2020-01-01",
+            "Image_Src": "Default/01.jpg",
+            "Content": [
+                "描述 描述 描述 描述 描述 描述 描述 描述 描述 描述",
+                "Description Description Description Description Description",
+                "描述 描述 描述 描述 描述 描述 描述 描述 描述 描述",
+                "Description Description Description Description Description"
+            ]
+        }
+    ]
+}
